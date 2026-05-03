@@ -6,9 +6,19 @@ const Counter = () => {
 
   return (
     <div className="counter">
-      <button id="increase">I</button>
+      <button
+        id="increase"
+        onClick={updateCounter(counter, setCounter, "increase")}
+      >
+        I
+      </button>
       <p>{counter}</p>
-      <button id="decrease">D</button>
+      <button
+        id="decrease"
+        onClick={updateCounter(counter, setCounter, "decrease")}
+      >
+        D
+      </button>
     </div>
   );
 };

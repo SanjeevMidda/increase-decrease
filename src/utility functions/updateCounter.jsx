@@ -1,6 +1,6 @@
 import React from "react";
 
-const updateCounter = ({ counterValue, method }) => {
+const updateCounter = ({ counterValue, updateCounterValue, method }) => {
   return <div>updateCounter</div>;
 };
 
