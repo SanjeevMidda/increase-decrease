@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import updateCounter from "../utility functions/updateCounter";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);
