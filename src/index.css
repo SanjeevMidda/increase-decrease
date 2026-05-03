@@ -10,3 +10,13 @@
   align-items: center;
   height: 100dvh;
 }
+
+.counter {
+  display: flex;
+  gap: 20px;
+}
+
+button,
+p {
+  padding: 10px;
+}
