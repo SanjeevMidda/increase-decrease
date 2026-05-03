@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import useCounter from "../hooks/useCounter";
 
 const Counter = () => {
-  const [counter, setCounter] = useState(0);
+  const { counter, increase, decrease, reset } = useCounter();
 
   return (
     <div className="counter">
-      <button id="increase">I</button>
+      <button id="increase" onClick={increase}>
+        I
+      </button>
       <p>{counter}</p>
-      <button id="decrease">D</button>
+      <button id="decrease" onClick={decrease}>
+        D
+      </button>
     </div>
   );
 };
