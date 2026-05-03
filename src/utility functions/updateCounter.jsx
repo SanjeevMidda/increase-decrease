@@ -1,7 +1,12 @@
-import React from "react";
-
-const updateCounter = ({ counterValue, updateCounterValue, method }) => {
-  return <div>updateCounter</div>;
+const updateCounter = (counterValue, updateCounterValue, method) => {
+  console.log(method);
+  if (method === "increase") {
+    return console.log("increase");
+  } else if (method === "decrease") {
+    return console.log("decrease");
+  } else {
+    return;
+  }
 };
 
 export default updateCounter;
