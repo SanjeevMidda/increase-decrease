@@ -1,12 +1,15 @@
 const updateCounter = (counterValue, updateCounterValue, method) => {
-  console.log(method);
-  if (method === "increase") {
-    return console.log("increase");
-  } else if (method === "decrease") {
-    return console.log("decrease");
-  } else {
-    return;
-  }
+  method === "increase"
+    ? updateCounterValue(counterValue + 1)
+    : updateCounterValue(counterValue - 1);
+
+  //   if (method === "increase") {
+  //     updateCounterValue(counterValue + 1);
+  //   } else if (method === "decrease") {
+  //     updateCounterValue(counterValue - 1);
+  //   } else {
+  //     return;
+  //   }
 };
 
 export default updateCounter;
