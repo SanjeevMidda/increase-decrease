@@ -9,7 +9,7 @@ const Counter = () => {
       <button
         id="increase"
         onClick={() => {
-          updateCounter(counter, setCounter, "increase");
+          updateCounter(setCounter, "increase");
         }}
       >
         I
@@ -18,7 +18,7 @@ const Counter = () => {
       <button
         id="decrease"
         onClick={() => {
-          updateCounter(counter, setCounter, "decrease");
+          updateCounter(setCounter, "decrease");
         }}
       >
         D

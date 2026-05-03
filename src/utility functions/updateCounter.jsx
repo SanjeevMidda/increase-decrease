@@ -1,15 +1,7 @@
-const updateCounter = (counterValue, updateCounterValue, method) => {
+const updateCounter = (updateCounterValue, method) => {
   method === "increase"
-    ? updateCounterValue(counterValue + 1)
-    : updateCounterValue(counterValue - 1);
-
-  //   if (method === "increase") {
-  //     updateCounterValue(counterValue + 1);
-  //   } else if (method === "decrease") {
-  //     updateCounterValue(counterValue - 1);
-  //   } else {
-  //     return;
-  //   }
+    ? updateCounterValue((prev) => prev + 1)
+    : updateCounterValue((prev) => prev - 1);
 };
 
 export default updateCounter;
